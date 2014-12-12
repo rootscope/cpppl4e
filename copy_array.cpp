@@ -4,3 +4,7 @@ void copy_fct(){
   for (auto i=0; i!=10; ++i) // copy elements
     v2[i]=v1[i];
 }
+
+int main(){
+  copy_fct();
+}
