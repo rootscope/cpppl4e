@@ -1,3 +1,7 @@
+# executables
 a.exe
 test.exe
 temp.exe
+
+# c++ files
+test.cpp
