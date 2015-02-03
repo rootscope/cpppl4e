@@ -17,6 +17,21 @@ private:
   int sz; // the number of elements
 };
 
+double ras(int s){
+  Vector v(s);
+  for(int i = 0; i != v.size(); i++){
+    cin >> v[i];
+  }
+
+  double sum = 0;
+  for(int i = 0; i != v.size(); i++){
+    sum += v[i];
+  }
+
+  return sum;
+}
+
+/*
 void vector_init(Vector& v, int s){
   v.elem = new double[s];
   v.size = s;
@@ -34,6 +49,7 @@ double read_and_sum(int s){
   }
   return sum;
 }
+*/
 
 int main(){
   cout << read_and_sum(3);
