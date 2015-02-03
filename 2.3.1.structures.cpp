@@ -7,6 +7,16 @@ struct Vector{
   double* elem;
 };
 
+class Vector{
+public:
+  Vector(int s) :elem{new double[s]}, sz{s} { } // constr uct a Vector
+  double& operator[](int i) { return elem[i]; } // element access: subscripting
+  int size() { return sz; }
+private:
+  double∗ elem; // pointer to the elements
+  int sz; // the number of elements
+};
+
 void vector_init(Vector& v, int s){
   v.elem = new double[s];
   v.size = s;
